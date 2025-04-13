@@ -65,7 +65,7 @@ export default function QuickShareNew({ }) {
       </div>
       <FileUpload onFiles={handleFiles} onReceiveClicked={hasBeenSentLink ? undefined : onReceiveClicked} />
       <p className="text-gray-500 text-xs mt-2">
-        We do not use cookies. Your files are protected with end-to-end encryption, meaning they remain unreadable by anyone but you.<br /><a href="https://github.com/robinkarlberg/transfer.zip-web" className="text-primary hover:underline">GitHub {stars && <span>({stars} <BIcon name={"star"}/>)</span>} </a>
+        We do not use cookies. Your files are protected with end-to-end encryption, meaning they remain unreadable by anyone but you.
       </p>
     </div>
   )
