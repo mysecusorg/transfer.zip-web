@@ -25,9 +25,6 @@ const callsToAction = [
   // { name: 'Contact', href: `mailto:${process.env.REACT_APP_CONTACT_EMAIL}`, icon: "envelope-fill" },
 ]
 
-const ctaLink = "https://github.com/robinkarlberg/transfer.zip-web"
-const ctaText = "GitHub"
-
 export default function SelfHostHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -105,11 +102,6 @@ export default function SelfHostHeader() {
             </PopoverPanel>
           </Popover>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to={ctaLink} className="text-sm/6 font-semibold text-gray-900">
-            {ctaText} <span aria-hidden="true">&rarr;</span>
-          </Link>
-        </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
@@ -170,14 +162,6 @@ export default function SelfHostHeader() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Privacy
-                </Link>
-              </div>
-              <div className="py-6">
-                <Link
-                  to={ctaLink}
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  {ctaText}
                 </Link>
               </div>
             </div>
